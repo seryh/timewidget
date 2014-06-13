@@ -1,5 +1,8 @@
 Time widget
 
+
+![example](example.png)
+
 init:
 
 ```
