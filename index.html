@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time Widget</title>
+    <link rel="stylesheet" href="jquery-ui-1.10.2.custom.min.css" type="text/css" />
+    <link rel="stylesheet" href="time-widget-style.css" type="text/css" />
+
+    <script type="text/javascript" src="jquery-1.8.3.js"></script>
+    <script type="text/javascript" src="jquery-ui-1.9.js"></script>
+    <script type="text/javascript" src="iwayTimeWidget.js"></script>
+
+</head>
+<body>
+
+<div style="width: 600px; margin: auto auto; margin-top: 50px;">
+
+    <div class="timepicker"></div>
+
+    <div class="timepicker" style="margin-top: 20px;"></div>
+
+</div>
+
+<script>
+    var timeWidget = $('.timepicker').iwayTimeWidget({
+        startPositionIndex: 4,
+        enabledAlert: true,
+        inputsName: {
+            hourInput: 'HH[]',
+            minutesInput: 'MM[]'
+        },
+        localization : {timeAlert: 'Specify the time from 00:00 to 23:59'},
+        onChange: function(self, valObj, isValid) {
+            //console.log(self, valObj, isValid);
+            var timePickers = $('.timepicker');
+            timePickers.not(self.element).eq(0)
+                       .data('iwayTimeWidget')
+                       .setStartPositionIndex( self.getPositionIndex() );
+        }
+    }).data('iwayTimeWidget');
+</script>
+
+</body>
+</html>

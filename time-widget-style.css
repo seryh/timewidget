@@ -1,0 +1,101 @@
+/* iwayTimeWidget */
+
+.iway-time-widget-autocomplete-menu {
+    overflow: auto;
+    max-height: 200px;
+    /*width: 129px;*/
+    padding-left: 4px;
+    font-size: 14px;
+}
+
+.iway-time-widget.iway-time-widget-error {
+    border: solid 1px #d22800;
+    background-color: #f8ded8;
+    background-position: 115px -12px;
+}
+
+.iway-time-widget.iway-time-widget-off {
+    background-color: #00aa4f;
+    color: #C6C9C5;
+}
+
+.iway-time-widget.iway-time-widget-off input {
+    color: #C6C9C5;
+}
+
+.iway-time-widget input {
+    background: none;
+    border: none;
+    width: 27px;
+    height: 30px;
+    padding: 0px;
+    color: #444d3e;
+    /*outline: 1px solid #f0c828;*/
+}
+
+.iway-time-widget input:focus { outline: none; }
+
+.iway-time-widget .iway-time-widget-hour {
+    text-align: right;
+}
+.iway-time-widget .iway-time-widget-minutes {
+    text-align: left;
+}
+
+.iway-time-widget .iway-time-widget-split {
+    padding-bottom: 3px;
+}
+
+.iway-time-widget {
+    width: 137px;
+    border: solid 1px #C6C9C5;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 4px;
+    text-align: left;
+    height: 30px;
+    color: #444d3e;
+    font-family: "PT Sans Caption","verdana","sans-serif";
+    background-image:url(select_sprite-2.png);
+    background-position: 115px 12px;
+    background-repeat: no-repeat;
+}
+
+.iway-time-arrow-box {
+    position: absolute;
+    display: none;
+    background: #d22800;
+    color: #fff;
+    border-radius: 4px;
+    width: 243px;
+    height: 32px;
+    box-shadow: -1px 3px 8px -1px rgba(0, 0, 0, 0.7);
+    z-index: 8;
+    font-size: 14px;
+}
+
+.iway-time-arrow-box .padding {
+    padding: 7px;
+}
+
+.iway-time-arrow-box:after {
+    right: 100%;
+    top: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-color: rgba(210, 40, 0, 0);
+    border-right-color: #d22800;
+    border-width: 7px;
+    margin-top: -7px;
+    z-index: 8;
+}
+
+#rent-finder .iway-time-widget {
+    float: left;
+}
+
+/* iwayTimeWidget end */
