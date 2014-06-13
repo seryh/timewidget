@@ -2,7 +2,8 @@ Time widget
 
 init:
 
-` $('.timepicker').iwayTimeWidget({
+```
+$('.timepicker').iwayTimeWidget({
          startPositionIndex: 4,
          enabledAlert: true,
          inputsName: {
@@ -17,4 +18,5 @@ init:
                         .data('iwayTimeWidget')
                         .setStartPositionIndex( self.getPositionIndex() );
          }
-     })`
+});
+```
