@@ -1,3 +1,7 @@
+/*!
+ * Copyright 2013 Seryh Oleg, email: o.seryh@gmail.com
+ * git: https://github.com/seryh/timewidget
+ */
 ;(function( $ ) {
     $.widget( "ui.iwayTimeWidget", {
         options: {
